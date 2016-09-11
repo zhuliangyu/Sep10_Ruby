@@ -1,0 +1,7 @@
+<h1>All blog titles</h1>
+<% @posts.each do |elem| %>
+    title:
+    <a href="/posts/<%= elem.id %>">    <%= elem.title %>
+    </a>
+    <br>
+<% end %>
